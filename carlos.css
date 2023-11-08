@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+}
+
+.container{
+    
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    height: 350px;
+    width: 300px;
+    margin: 10px;
+    transition: 300ms;
+}
+
+.persona{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #00a5ec;
+    transition: 300ms;
+    position: absolute;
+}
+
+.imagen_persona{
+    border-radius: 10%;
+    height: 350px;
+    width: 200px;
+    background-image: url(img/gato.png);
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+
+
+
+.detalle{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin-top: 150px;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+}
+
+
+/* hover */
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card:hover .imagen_persona{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(img/gato.png);
+}
+
+
+
+.card:hover .persona{
+    background-image: radial-gradient(white,rgb(255, 0, 221));
+}
+
+
+
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: auto;
+    width: 90%;
+    font-size: 12px;
+}
+
+
+  
